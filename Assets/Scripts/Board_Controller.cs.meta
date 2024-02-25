@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: d4e673980e268f14bae55c4f516cb07e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - bgTilePrefab: {fileID: 909054937651625427, guid: 4d0064af03c735e4e947d1fea01135c6, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

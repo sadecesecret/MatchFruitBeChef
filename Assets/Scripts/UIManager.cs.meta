@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 961ce39086c94554f8763f089a608992
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - timeText: {instanceID: 0}
+  - scoreText: {instanceID: 0}
+  - hammerText: {instanceID: 0}
+  - greetings: {instanceID: 0}
+  - roundOverScreen: {instanceID: 0}
+  - levelSelectButton: {instanceID: 0}
+  - winScore: {instanceID: 0}
+  - winText: {instanceID: 0}
+  - winStars1: {instanceID: 0}
+  - winStars2: {instanceID: 0}
+  - winStars3: {instanceID: 0}
+  - pauseScreen: {instanceID: 0}
+  - pCont: {instanceID: 0}
+  - avatar: {instanceID: 0}
+  - myAvatar: {instanceID: 0}
+  - newAvatar: {instanceID: 0}
+  - avatarImage: {instanceID: 0}
+  - spawnManager: {fileID: 11400000, guid: ceb669a2d66a5a541be5a06ea9b925e3, type: 2}
+  - chefManager: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

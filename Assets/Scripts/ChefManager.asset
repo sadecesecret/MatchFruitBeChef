@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d51c920fb2840324ea957cbba0d8bdef, type: 3}
+  m_Name: ChefManager
+  m_EditorClassIdentifier: 
+  prefabs: []
+  avatars:
+  - prefab: {fileID: 881766976494597905, guid: dcd5802b0934246459f5906635ba067f, type: 3}
+    initialCount: 0
+  - prefab: {fileID: 6871265148979903688, guid: 87f57e56e18eb174389f4afe0c79703e, type: 3}
+    initialCount: 0
+  - prefab: {fileID: 1774236223666302109, guid: b9b771794e239994aaaa1fd697ab4f48, type: 3}
+    initialCount: 0
+  - prefab: {fileID: 8220250499569284749, guid: 995c3259a907ac040a0a5392eb0dab1d, type: 3}
+    initialCount: 0
+  - prefab: {fileID: 6083314055906920566, guid: 73f449d1232a06345bae100dc5d365fe, type: 3}
+    initialCount: 0
+  - prefab: {fileID: 2875296622986336749, guid: b4ca366eb3341ec4d8d897a2f5919af5, type: 3}
+    initialCount: 0
+  - prefab: {fileID: 7963457956598911075, guid: 1534a02008cb7c64e9f587a053f06c5d, type: 3}
+    initialCount: 0
+  - prefab: {fileID: 3891826986713059854, guid: 35ecb63e9d18a874494e676bc96f2d86, type: 3}
+    initialCount: 0
+  - prefab: {fileID: 2186182705736939950, guid: 21804d983deaf2a488311e7e23a097d5, type: 3}
+    initialCount: 0
+  - prefab: {fileID: 1195283240534843323, guid: e895bfd7fdee604409e8c92f2ea9a587, type: 3}
+    initialCount: 0
+  - prefab: {fileID: 1413633531415299237, guid: 1af25533a13c8d54baf6adfe3d0537f6, type: 3}
+    initialCount: 0
+  - prefab: {fileID: 5096368624682598057, guid: 42bee1dedac9311409f245c0deae6b44, type: 3}
+    initialCount: 0
+  - prefab: {fileID: 7357274612913162821, guid: a64e36fd1065ac64ab3b9bc8758fcb78, type: 3}
+    initialCount: 0
+  - prefab: {fileID: 6967481986984540485, guid: 8cbbfe0439053c849a3ee3e84c90f6c2, type: 3}
+    initialCount: 0
+  - prefab: {fileID: 9095144429283897773, guid: 8df078eae69cf794091841bfdd89e5e0, type: 3}
+    initialCount: 0

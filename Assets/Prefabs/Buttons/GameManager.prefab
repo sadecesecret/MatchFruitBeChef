@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4760769181566077622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023712004919913195}
+  - component: {fileID: 5348057960618297775}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2023712004919913195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4760769181566077622}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.984607, y: 2.9780436, z: -0.10250843}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5348057960618297775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4760769181566077622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f058204697da77e4ca4454cdde1cb6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelScores: 0
+  wonPizza: []
+  levelNames: []
+  avatars:
+  - {fileID: -1271882830, guid: 739729baaf5dc3149bf4528e4ff7387d, type: 3}
+  - {fileID: -1557806962, guid: 739729baaf5dc3149bf4528e4ff7387d, type: 3}
+  - {fileID: -1498913742, guid: 739729baaf5dc3149bf4528e4ff7387d, type: 3}
+  - {fileID: 506926049, guid: 739729baaf5dc3149bf4528e4ff7387d, type: 3}
+  - {fileID: 1603304211, guid: 739729baaf5dc3149bf4528e4ff7387d, type: 3}
+  - {fileID: -1113038911, guid: 739729baaf5dc3149bf4528e4ff7387d, type: 3}
+  - {fileID: -870965754, guid: 739729baaf5dc3149bf4528e4ff7387d, type: 3}
+  - {fileID: -2073488645, guid: 739729baaf5dc3149bf4528e4ff7387d, type: 3}
+  - {fileID: 210566104, guid: 739729baaf5dc3149bf4528e4ff7387d, type: 3}
+  - {fileID: 1877712933, guid: 739729baaf5dc3149bf4528e4ff7387d, type: 3}
+  - {fileID: -1363689906, guid: 739729baaf5dc3149bf4528e4ff7387d, type: 3}
+  - {fileID: 747405786, guid: 739729baaf5dc3149bf4528e4ff7387d, type: 3}
+  isWonAvatar: []
