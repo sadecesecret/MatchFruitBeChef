@@ -34,10 +34,12 @@ public class UIManager : MonoBehaviour
     public UnityEngine.UI.Image avatarImage;
     public SpawnManager spawnManager;
     public GameObject currentAvatarPrefab;
-    public IsWonChef isWonChef;
+    //public IsWonChef isWonChef;
     public ChefListController chefListController;
-    
-     
+    public Vector3 spawnChefPoistion;
+  
+
+
 
 
 
@@ -46,7 +48,8 @@ public class UIManager : MonoBehaviour
     {
         theBoard = FindObjectOfType<Board_Controller>();
         pCont = FindObjectOfType<PizzaController>();
-        greetings.gameObject.SetActive(false);    
+        //greetings.gameObject.SetActive(false);
+       
        
     }
 
@@ -55,13 +58,13 @@ public class UIManager : MonoBehaviour
     {
         chefListController = FindObjectOfType<ChefListController>();
 
+        //SceneManager.sceneLoaded += OnSceneLoaded;
 
-     
         winStars1.SetActive(false);
         winStars2.SetActive(false);
         winStars3.SetActive(false);
        
-        chefListController.LoadCheflist();
+        //chefListController.LoadCheflist();
       
 
 
@@ -69,6 +72,14 @@ public class UIManager : MonoBehaviour
 
 
     }
+    //void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    //{
+    //    if (scene.name != "Restaurant")
+    //    {
+    //        // Restoran sahnesi yüklendi, istediðiniz metodu çaðýrabilirsiniz
+    //        GameManager.Instance.SpawnHighestCountAvatar(spawnChefPoistion);
+    //    }
+    //}
 
     // Update is called once per frame
     void Update()
@@ -77,6 +88,7 @@ public class UIManager : MonoBehaviour
             PauseUnPause();
         }
         Debug.Log("cehf göster");
+       
     }
     public void PauseUnPause() 
     {
@@ -124,22 +136,24 @@ public class UIManager : MonoBehaviour
     }
     public void ChosenChef   ()
     {
+        
         if (pCont.currentCoin > 49 && spawnManager != null )
          {
             pCont.currentCoin -= 50;
             scoreText.text = pCont.currentCoin.ToString();
-            int randomIndex = UnityEngine.Random.Range(0, spawnManager.avatars.Length);
+          int  randomIndex=UnityEngine.Random.Range(0,spawnManager.avatars.Length-1);
             SpawnManager.PrefabData targetrChef = spawnManager.avatars[randomIndex];
             Instantiate(targetrChef.prefab, currentAvatarPrefab.transform.position, Quaternion.identity);
-            chefListController.AddItem("NewItem", targetrChef.prefab, 0);
-            chefListController.SaveCheflist();
+            spawnManager.IncreaseInitialCountAvatars(randomIndex,5);
+            //chefListController.AddItem("NewItem", targetrChef.prefab.name, 0);
+            //chefListController.SaveCheflist();
+          spawnManager.SaveAvatarInitialCounts();
             
-
         }
         
 
     }
-    
+   
     
    
 

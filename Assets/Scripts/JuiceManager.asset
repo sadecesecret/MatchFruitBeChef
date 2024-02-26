@@ -7,7 +7,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d51c920fb2840324ea957cbba0d8bdef, type: 3}
   m_Name: JuiceManager
@@ -15,18 +15,26 @@ MonoBehaviour:
   prefabs:
   - prefab: {fileID: 2059774289091213850, guid: 60e86606da402da48ba63e2edb6091ba, type: 3}
     initialCount: 0
+    prefabName: 
   - prefab: {fileID: 1210886023512490706, guid: a3d4ff76142be8b469915e465c6dcbfc, type: 3}
-    initialCount: 6
+    initialCount: 0
+    prefabName: 
   - prefab: {fileID: 5922023940438249102, guid: 2929c3a5dbcd0734d875f13ef0da43e2, type: 3}
     initialCount: 0
+    prefabName: 
   - prefab: {fileID: 9010652571014886259, guid: 9a2ba459dc9f65449936b0f8e11450b5, type: 3}
     initialCount: 0
+    prefabName: 
   - prefab: {fileID: 2282880227658952214, guid: 1db87638e3922304d9ff8ab776a6ec40, type: 3}
     initialCount: 0
+    prefabName: 
   - prefab: {fileID: 1971559822613080932, guid: b4e5c30bc3b795a4d91151a41d554ae9, type: 3}
-    initialCount: 5
+    initialCount: 0
+    prefabName: 
   - prefab: {fileID: 8115527261477720794, guid: d62bfcbd58d92b545a6435f9784a3624, type: 3}
     initialCount: 0
+    prefabName: 
   - prefab: {fileID: 3927879839409690024, guid: c29434a1b3b746e4abbc0641ae467600, type: 3}
     initialCount: 0
+    prefabName: 
   avatars: []

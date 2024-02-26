@@ -224,6 +224,22 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 5348057960618297775, guid: c2fedbc3bac2375469fd398b970da341, type: 3}
+      propertyPath: chef
+      value: 
+      objectReference: {fileID: 2084309508}
+    - target: {fileID: 5348057960618297775, guid: c2fedbc3bac2375469fd398b970da341, type: 3}
+      propertyPath: position.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5348057960618297775, guid: c2fedbc3bac2375469fd398b970da341, type: 3}
+      propertyPath: position.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5348057960618297775, guid: c2fedbc3bac2375469fd398b970da341, type: 3}
+      propertyPath: spawnManager
+      value: 
+      objectReference: {fileID: 11400000, guid: 4fb46562fb269044cb4d0020a20b58c8, type: 2}
+    - target: {fileID: 5348057960618297775, guid: c2fedbc3bac2375469fd398b970da341, type: 3}
       propertyPath: avatars.Array.size
       value: 12
       objectReference: {fileID: 0}
@@ -321,16 +337,44 @@ PrefabInstance:
     m_TransformParent: {fileID: 4612930609619326444}
     m_Modifications:
     - target: {fileID: 1177878848243096192, guid: 3e10330461b78aa45973480e2f40914f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177878848243096192, guid: 3e10330461b78aa45973480e2f40914f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177878848243096192, guid: 3e10330461b78aa45973480e2f40914f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4612930609619326441}
+    - target: {fileID: 1177878848243096192, guid: 3e10330461b78aa45973480e2f40914f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177878848243096192, guid: 3e10330461b78aa45973480e2f40914f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1177878848243096192, guid: 3e10330461b78aa45973480e2f40914f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GoToLevelSelect
       objectReference: {fileID: 0}
     - target: {fileID: 1177878848243096192, guid: 3e10330461b78aa45973480e2f40914f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ClearCheflist
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177878848243096192, guid: 3e10330461b78aa45973480e2f40914f, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177878848243096192, guid: 3e10330461b78aa45973480e2f40914f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ChefListController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1177878848243096192, guid: 3e10330461b78aa45973480e2f40914f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 1321857188147695449, guid: 3e10330461b78aa45973480e2f40914f, type: 3}
       propertyPath: m_Pivot.x
@@ -1009,7 +1053,7 @@ Transform:
   m_GameObject: {fileID: 1405966337}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 48.942257}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2084309509}
@@ -1056,7 +1100,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 43f99efac84fb7447a5ffd54fee22a0c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1752,7 +1796,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2084309509}
-  - component: {fileID: 2084309510}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1768,7 +1811,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084309508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.08, y: 4.42, z: 0}
+  m_LocalPosition: {x: 3, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1776,20 +1819,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2084309510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084309508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5deb24224da996c4392cb370beee6f7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isWonChef:
-    ChefList: []
 --- !u!1001 &2934492380357007949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1910,7 +1939,7 @@ PrefabInstance:
     - target: {fileID: 1149066841516508537, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 2084309510}
+      objectReference: {fileID: 11400000, guid: 4fb46562fb269044cb4d0020a20b58c8, type: 2}
     - target: {fileID: 1149066841516508537, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -1929,7 +1958,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1149066841516508537, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: SaveCheflist
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1149066841516508537, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
@@ -1941,7 +1970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1149066841516508537, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: ChefListController, Assembly-CSharp
+      value: UIManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 1149066841516508537, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
@@ -1953,7 +1982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1149066841516508537, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1149066841516508537, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2071,6 +2100,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChefButton
       objectReference: {fileID: 0}
+    - target: {fileID: 4476252925272057674, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
+      propertyPath: m_text
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5029224244486058267, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
@@ -2091,6 +2124,34 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6182265786729742123, guid: dec456f16f6f9c449a894aaa81ac4039, type: 3}
+    - target: {fileID: 8258249839817045211, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258249839817045211, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258249839817045211, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258249839817045211, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258249839817045211, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ClearCheflist
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258249839817045211, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ChefListController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258249839817045211, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8283614090621072588, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
       propertyPath: pCont
       value: 
@@ -2134,11 +2195,19 @@ PrefabInstance:
     - target: {fileID: 8283614090621072588, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
       propertyPath: chefListController
       value: 
-      objectReference: {fileID: 2084309510}
+      objectReference: {fileID: 0}
     - target: {fileID: 8283614090621072588, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
       propertyPath: currentAvatarPrefab
       value: 
       objectReference: {fileID: 2084309508}
+    - target: {fileID: 8283614090621072588, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
+      propertyPath: spawnChefPoistion.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8283614090621072588, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
+      propertyPath: spawnChefPoistion.y
+      value: 4.42
+      objectReference: {fileID: 0}
     - target: {fileID: 8483227598831762965, guid: a2b613c770636ed4295fc245d8757cc9, type: 3}
       propertyPath: m_SizeDelta.x
       value: 652.1677
